@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="h-16 flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <Navbar
         isBordered
         css={{
@@ -47,16 +47,16 @@ const Header = () => {
           variant="highlight-rounded"
         >
           <Navbar.Link href="/">Home</Navbar.Link>
-          <Navbar.Link href="/About">About</Navbar.Link>
-          <Navbar.Link href="/Transactions">Transactions</Navbar.Link>
+          <Navbar.Link href="/about">About</Navbar.Link>
+          <Navbar.Link href="/transactions">Transactions</Navbar.Link>
         </Navbar.Content>
 
         <Navbar.Content>
-          <Navbar.Item hideIn="xs">
+          {/* <Navbar.Item hideIn="xs">
             <Button auto onPress={toggleTheme}>
               {icon}
             </Button>
-          </Navbar.Item>
+          </Navbar.Item> */}
           <Navbar.Link color="inherit" href="#">
             Login
           </Navbar.Link>
